@@ -1,0 +1,42 @@
+Tx End,CAN ID,DLC,Signal,Start Byte,Start Bit,Bit Length,Format,MinValue,MaxValue,Scale,Offset,Unit,Description
+VCU,0x140,8,car_state,0,0,2,Intel,0,3,1,0,-,"0x00: Idle
+0x01: Ignition
+0x02: ACC
+0x03: Run"
+,,,car_gear,0,2,2,Intel,0,3,1,0,-,"0x00: P
+0x01: R
+0x02: N
+0x03: D"
+,,,car_speed,1,8,8,Intel,0,255,1,0,km/h,
+,,,motor_rpm,2,16,16,Intel,0,65535,1,0,rpm,
+,,,car_odo,4,32,24,Intel,0,1000000,1,0,km,
+,,,rolling_counter,7,56,4,Intel,,,,,,
+VCU,0x142,8,car_soc,0,0,8,Intel,0,255,1,0,,"0 indicates 0%
+255 indicates 100%"
+,,,motor_temp,1,8,8,Intel,-40,215,1,-40,Degree C,
+,,,battery_temp,2,16,8,Intel,-40,215,1,-40,Degree C,
+,,,led_1,3,24,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_2,3,25,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_3,3,26,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_4,3,27,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_5,3,28,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_6,3,29,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_7,3,30,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_8,3,31,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_9,4,32,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_10,4,33,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_11,4,34,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_12,4,35,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_13,4,36,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_14,4,37,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_15,4,38,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_16,4,39,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_17,5,40,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_18,5,41,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_19,5,42,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,led_20,5,43,1,Intel,0,1,1,0,-,"0: off, 1:on"
+,,,rolling_counter,7,56,4,Intel,,,,,,
+DCU,0x145,8,FL_Wheel_rpm,0,0,16,Intel,0,65535,1,0,rpm,
+,,,FR_Wheel_rpm,2,16,16,Intel,0,65535,1,0,rpm,
+,,,RL_Wheel_rpm,4,32,16,Intel,0,65535,1,0,rpm,
+,,,RR_Wheel_rpm,6,48,16,Intel,0,65535,1,0,rpm,

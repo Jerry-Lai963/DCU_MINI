@@ -1,0 +1,97 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: 
+BO_ 320 VCU_140: 8 Vector__XXX
+   SG_ car_state : 0|2@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ car_gear : 2|2@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ car_speed : 8|8@1+ (1,0) [0|1] "kph" Vector__XXX
+   SG_ motor_rpm : 16|16@1+ (1,0) [0|1] "rpm" Vector__XXX
+   SG_ car_odo : 32|24@1+ (1,0) [0|1] "km" Vector__XXX
+   SG_ rolling_counter : 56|4@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 322 VCU_142: 8 Vector__XXX
+   SG_ car_soc : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ motor_temp : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ battery_temp : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ rolling_counter : 56|4@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led1 : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led2 : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led3 : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led4 : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led5 : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led6 : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led7 : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led8 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led9 : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led10 : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led11 : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led12 : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led13 : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led14 : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led15 : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led16 : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led17 : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led18 : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led19 : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ led20 : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483973 DCU_145: 8 Vector__XXX
+   SG_ FL_wheel_rpm : 0|16@1+ (1,0) [0|1] "rpm" Vector__XXX
+   SG_ FR_wheel_rpm : 16|16@1+ (1,0) [0|1] "rpm" Vector__XXX
+   SG_ RL_wheel_rpm : 32|16@1+ (1,0) [0|1] "rpm" Vector__XXX
+   SG_ RR_wheel_rpm : 48|16@1+ (1,0) [0|1] "rpm" Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+VAL_ 320 car_state 0 "IDLE" 1 "IGN" 2 "ACC" 3 "RUN";
+VAL_ 320 car_gear 0 "P" 1 "R" 2 "N" 3 "D";
+VAL_ 320 car_speed 0 "" 0 "" 0 "" 0 "";
+VAL_ 320 motor_rpm 0 "" 0 "" 0 "" 0 "";
+VAL_ 320 car_odo 0 "" 0 "" 0 "" 0 "";
+VAL_ 320 rolling_counter 0 "" 0 "" 0 "" 0 "";
+VAL_ 322 led1 0 "Off" 1 "On";
+VAL_ 322 led2 0 "Off" 1 "On";
+VAL_ 322 led3 0 "Off" 1 "On";
+VAL_ 322 led4 0 "Off" 1 "On";
